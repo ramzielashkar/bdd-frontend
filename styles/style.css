@@ -341,10 +341,130 @@ ul li{
   margin-top: 6vw!important;
 }
 
+.social{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+
+.social p{
+  margin-right: 6vh;
+  font-size: 2vw;
+  font-family: sans-serif;
+  color: #101010;
+  margin-bottom: 15px;
+
+}
+.download{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 6vh;
+}
+.download img{
+  margin-right: 2vh;
+}
+
+
+.statistics{
+
+margin-top: 50px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+ background-image:url("../parallax-light.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  background-size: cover;
+  padding: 50px 20px;
+
+}
+
+.statistics p{
+
+  font-size: 2vw;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.stats{
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.stat-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width:30vw;
+
+}
+
+.stat-card h3{
+  font-size: 3vw;
+  color: transparent;
+  font-family: The Mix Black;
+  margin-top: 15px;
+  text-align: center;
+
+  }
+
+  .stat-card p{
+    letter-spacing: 2px;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2vh;
+    font-weight: bold;
+    max-width: 80%;
+    }
+
+.first-st {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #009a9e;
+}
+.second-st {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #e13870;
+
+}
+.third-st {
+  -webkit-text-stroke-width: 2px;
+
+  -webkit-text-stroke-color: #0078be;
+
+}
+.fourth-st {
+  -webkit-text-stroke-width: 2px;
+
+  -webkit-text-stroke-color: #00802d;
+
+}
+
+
+
+
+
 
 
 
 /* Media Queries */
+
+@media only screen and (max-width : 768px){
+
+.stats{
+  flex-wrap: wrap;
+}
+
+}
+
+
 
 @media only screen and (max-width : 1000px)  {
 
@@ -436,6 +556,27 @@ ul li{
 .wrap{
   flex-wrap: wrap;
 }
+
+
+}
+
+
+@media only screen and (max-width :770px) {
+
+  .download{
+    justify-content: center;
+    margin-right: 0;
+  }
+
+  .social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .social p{
+margin-right: 0;
+  }
 
 
 }
