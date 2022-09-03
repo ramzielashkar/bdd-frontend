@@ -271,6 +271,7 @@ list-style: none;
 .services{
   display: flex;
   justify-content: space-evenly;
+  width: 100%;
 }
 
 .s-cards{
@@ -288,6 +289,7 @@ align-items: center;
 width: 14vw;
 background-image:url("../images/bg-icon.png");
 }
+
 
 .s-card p{
   text-align: left;
@@ -447,7 +449,78 @@ align-items: center;
 
 }
 
+.trending{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image:url("../bg-icon-empty.png");
+  background-color: #f5f5f5;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  background-size: cover;
+  padding-top: 50px;
 
+}
+
+.trending h2{
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.trend-cards{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+
+}
+
+
+.trend-card{
+  display: flex;
+  flex-direction: column;
+  height: 32vw;
+  width: 23vw;
+  background: white;
+}
+
+.trend-card img{
+  margin-bottom: 2vw;;
+}
+
+.trend-card h6{
+  font-size: 1.1vw;
+  font-weight: bold;
+  font-family: sans-serif;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.trend-card p{
+  font-size: 0.9vw;
+  font-family: sans-serif;
+  margin-left: 10%;
+  margin-top: 6vw;
+  width: 180px;
+}
+
+.trending button{
+  background-color: #0078BE;
+  color: white;
+  font-weight: bold;
+  font-family: sans-serif;
+  border: none;
+  width: 12vw;
+  height: 3vw;
+  border-radius: 1vw;
+  margin-top:2vw;
+  font-size: 1vw;
+  margin-bottom: 50px;
+
+}
 
 
 
@@ -455,6 +528,54 @@ align-items: center;
 
 
 /* Media Queries */
+
+@media only screen and (max-width : 1100px){
+
+  .trend-card{
+    width: 40%;
+    height: 100%;
+  }
+
+  .trend-card p{
+    margin-bottom: 20px;
+  }
+
+.remove{
+  display: none;
+}
+}
+
+@media only screen and (max-width : 750px){
+
+  .trend-card{
+    width: 80%;
+    height: 100%;
+  }
+
+  .trend-card h6{
+    margin-top: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .trend-card p{
+    font-size: 15px;
+    }
+
+    .trending button{
+      margin-top: 30px;
+      width: 20%;
+      height: 30px;
+    }
+
+.remove{
+  display: none;
+}
+.none{
+  display: none;
+}
+}
+
 
 @media only screen and (max-width : 768px){
 
@@ -511,6 +632,9 @@ width: 50%;
   width: 50vh;
 }
 
+.wrap{
+  flex-wrap: nowrap;
+}
 .s-card p{
   text-align: left;
   font-size: 2vw;
@@ -528,7 +652,7 @@ ul li{
 }
 
 
-@media only screen and (max-width :990px) and (min-width:577px) {
+@media only screen and (max-width :1000px) and (min-width:577px) {
 
   .s-card{
     width:40vw;
